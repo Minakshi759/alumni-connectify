@@ -1,0 +1,309 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:  #a50000;;
+      color: white;
+      padding: 10px 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: url('https://media.licdn.com/dms/image/v2/C5616AQF1dKE1i3w6RA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1589617883973?e=2147483647&v=beta&t=oB23f8SgcgbBku59CEsn92GLoDb3lcL16BAL7JITpdY') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+    }
+
+    .section {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 20px;
+      flex-wrap: wrap;
+      gap: 20px;
+      background-color: white;
+    }
+
+    .card {
+      background: #ffffff;
+      width: 300px;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+
+      .nav-links a {
+        margin: 5px 10px;
+      }
+
+      .hero h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+/* Header */
+header {
+ background: linear-gradient(to right, #6a3000, #999014, #806900);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Event Cards */
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.event-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+}
+
+.event-card h2 {
+  margin-top: 0;
+  color: #a50000;
+}
+
+.event-card .date,
+.event-card .location {
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+.event-card .desc {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #666;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f5f1;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Action Cards Section */
+.cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 40px;
+  background: #fefefe;
+}
+
+.card {
+  background: white;
+  border-bottom: 4px solid #a50000;
+  padding: 30px 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  color: #a50000;
+  margin-bottom: 10px;
+}
+
+.card-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #a50000;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Benefits Banner */
+.benefits-section {
+  position: relative;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDESNBOsCesKLlRQEcl_Ymj5uc38PmXvG2p0BSNrRzSNGT73dCXV_MEX144oyUlDtw38&usqp=CAU') center/cover no-repeat;
+  padding: 80px 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.benefits-overlay h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.benefits-overlay p {
+  font-style: italic;
+  margin: 10px 0 30px;
+}
+
+.benefits-button {
+  background: #009fe3;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.benefits-links ul {
+  list-style: none;
+}
+
+.benefits-links li {
+  margin: 12px 0;
+}
+
+.benefits-links a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 1px solid #009fe3;
+  padding-bottom: 4px;
+}
+
+/* BrownConnect+ Highlight */
+.connect-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background: #fefefe;
+  flex-wrap: wrap;
+}
+
+.connect-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.connect-text h2 {
+  color: #a50000;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.connect-text p {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.connect-button {
+  background: #a50000;
+  color: white;
+  padding: 14px 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.connect-image img {
+  max-width: 300px;
+}
+

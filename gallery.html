@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery - Alumni Connectify</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+    }
+
+    nav {
+      background-color: #a50000;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .logo span {
+      margin-left: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      vertical-align: middle;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+      background: linear-gradient(to right, #6a3000, #999014, #806900);
+      color: white;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+
+    .footer {
+      background-color: #a50000;
+      color: white;
+      padding: 50px 20px 20px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-logo {
+      flex: 1 1 200px;
+      margin-bottom: 30px;
+    }
+
+    .footer-logo img {
+      height: 60px;
+    }
+
+    .gift-button {
+      border: 1px solid white;
+      background: transparent;
+      color: white;
+      padding: 10px 20px;
+      margin: 20px 0;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      cursor: pointer;
+    }
+
+    .footer-links {
+      display: flex;
+      flex: 2 1 600px;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .footer-links div {
+      min-width: 150px;
+    }
+
+    .footer-links h4 {
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 0.95em;
+    }
+
+    .footer-links a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 4px 0;
+      font-size: 0.9em;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      padding-top: 20px;
+      font-size: 0.8em;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .footer-bottom span {
+      margin: 5px 0;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 8px;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #ffcc00;
+    }
+
+    @media (max-width: 768px) {
+      .footer-content {
+        flex-direction: column;
+      }
+
+      .footer-links {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="https://dsvv.s3.ap-south-1.amazonaws.com/uploads/2023/03/DSVV_LOGO_PNG.png" alt="Logo">
+      <span>Alumni Connectify</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="stories.html">Stories</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Gallery</h1>
+    <p>Memorable moments from alumni events</p>
+  </header>
+
+  <!-- Combined Column Gallery -->
+<section class="gallery-grid">
+  <div class="card"><h2>Event Snapshots</h2><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi1t6DGKqM4-9-UgMPinUf1grYqvL7sw6rF_zV7DVbGFBn-OYdMbNHLMt09RrmJWJprrg&usqp=CAU" alt="Event Photo"></div>
+  <div class="card"><h2>Campus</h2><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFpquSwkmx6avoKi9NmdBmW2lu4CeTjkz7Pg&s" alt="Campus"></div>
+  <div class="card"><h2>Sports Day</h2><img src="https://files.awgp.org/public_data/gurukulam/post/5473/yaWCQtgW9Jfza3_476756859_1038638821632217_7783966687184253905_n.jpg" alt="Sports Day"></div>
+  <div class="card"><h2>Student Activity</h2><img src="https://images.shiksha.com/mediadata/images/1535024927php0iPDQp.jpeg" alt="Activity"></div>
+  <div class="card"><h2>Library</h2><img src="https://www.sanskriti.edu.in/images/library-1.jpg" alt="Library"></div>
+  <div class="card"><h2>Labs</h2><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMa1oEQnZ519qtRR9w-cpjYxSlwoo9JQs4zg&s" alt="Labs"></div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="https://dsvv.s3.ap-south-1.amazonaws.com/uploads/2023/03/DSVV_LOGO_PNG.png" alt="Logo">
+        <br><br>
+        <button class="gift-button">MAKE A GIFT</button>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>COMMUNITY</h4>
+          <a href="#">Communities & Interests</a>
+          <a href="#">Events</a>
+          <a href="#">Giving</a>
+        </div>
+        <div>
+          <h4>GET INVOLVED</h4>
+          <a href="#">Volunteer</a>
+          <a href="#">Benefits</a>
+          <a href="#">Stories</a>
+        </div>
+        <div>
+          <h4>RESOURCES</h4>
+          <a href="#">About</a>
+          <a href="#">University Site</a>
+          <a href="#">Login</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Alumni Connectify / Haridwar, UK 249411 / +91-12345-67890</span>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
